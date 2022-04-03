@@ -7,3 +7,26 @@
 html {
     font-size: 62.5%;
 }
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-image: url(https://drive.google.com/uc?export=view&id=1EIRwdeLQQfljV8sSzIfXZSxKDPLqT6D-);
+    background-attachment:fixed;
+    background-size: 100% 100%;
+
+}
+
+.main-section {
+    height: 100vh;
+    width: 100%;
+    border: 2px solid blue;
+}
+
+.main-info {
+    height: 8rem;
+    width: 100%;
+    border: 2px solid rgb(21, 172, 147);
+    background-color: blue;
+    
+
+}
