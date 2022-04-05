@@ -50,3 +50,7 @@ body {
 .form-section {
     border: 2px solid lightpink;
 }
+
+.form-group {
+    border: 1px solid green;
+}

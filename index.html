@@ -19,40 +19,78 @@
         <section class="form-section">
             <!-- Form name, email and age -->
             <form action="" id="survey-form" method="post">
-                <label for="name" id="name-label">Name</label>
-                <input type="text" id="name" name="name" required placeholder="Enter your name">
-                <label for="email" id="email-label">Email</label>
-                <input type="email" name="email" id="email" required placeholder="Enter your Email">
-                <label for="number" id="number-label">Age (Optional)</label>
-                <input type="number" name="number" id="number" min="18" max="80" required placeholder="Age">
+                <div class="form-group">
+                  <label for="name" id="name-label">Name</label>
+                  <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                  <label for="email" id="email-label">Email</label>
+                  <input type="email" name="email" id="email" required placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                  <label for="number" id="number-label">Age (Optional)</label>
+                  <input type="number" name="number" id="number" min="18" max="80" required placeholder="Age">
+                </div>
                 <!-- dropdown list -->
-                <label for="dropdown" id="label-role">Which option best describes your current role?</label>
-                <select name="dropdown" id="dropdown">
+                <div class="form-group">
+                  <label for="dropdown" id="label-role">Which option best describes your current role?</label>
+                  <select name="dropdown" id="dropdown">
                     <option disabled selected value>Select current role</option>
                     <option value="student">Student</option>
                     <option value="fullT">Full Time Job</option>
                     <option value="partT">Part Time Job</option>
                     <option value="notSay">Prefer not to say</option>
                     <option value="other">Other</option>
-                </select>
+                  </select>
+                </div>
                 <!-- recommend radio buttons -->
-                <p class="radio-paragraph">Would you recommend my work to a friend?</p>
-                <input type="radio" name="recommend" id="definitely" value="definitely">
-                <label for="definitely">Definitely</label>
-                <input type="radio" name="recommend" id="maybe" value="maybe">
-                <label for="maybe">Maybe</label>
-                <input type="radio" name="recommend" id="notsure" value="notsure">
-                <label for="notsure">Not sure</label>
-                <input type="submit" value="submit">
+                <div class="form-group">
+                  <p class="radio-paragraph">Would you recommend my work to a friend?</p>
+                  <input type="radio" name="recommend" id="definitely" value="definitely">
+                  <label for="definitely">Definitely</label>
+                  <input type="radio" name="recommend" id="maybe" value="maybe">
+                  <label for="maybe">Maybe</label>
+                  <input type="radio" name="recommend" id="notsure" value="notsure">
+                  <label for="notsure">Not sure</label>
+              </div>
                 <!-- feature options -->
+              <div class="form-group">
                 <label for="page-feature" id="page-feature">What is your favorite feature about this page?</label>
                 <select name="page-feature" id="page-feature">
-                    <option disabled selected value>Select an option</option>
-                    <option value="design">Design</option>
-                    <option value="colors">Colors</option>
-                    <option value="elementsP">Elements Positioning</option>
-                    <option value="information">Information</option>
+                <option disabled selected value>Select an option</option>
+                <option value="design">Design</option>
+                <option value="colors">Colors</option>
+                <option value="elementsP">Elements Positioning</option>
+                <option value="information">Information</option>
                 </select>
+              </div>
+              <!-- Checkbox -->
+              <div class="form-group">
+                <p class="checkbox-paragraph">What wpuld ypu like to see improved (Check all that apply)</p>
+                <label for="video">Add Videos</label>
+                <input type="checkbox" name="video" id="video" value="video">
+                <label for="images">Add Images</label>
+                <input type="checkbox" name="images" id="images" value="images">
+                <label for="design">Change Design</label>
+                <input type="checkbox" name="design" id="design" value="design">
+                <label for="logo">Add Logos</label>
+                <input type="checkbox" name="logo" id="logo" value="logo">
+                <label for="info">More Information</label>
+                <input type="checkbox" name="info" id="info" value="info">
+                <label for="interactivity">Interactivity</label>
+                <input type="checkbox" name="interactivity" id="interactivity" value="interactivity">
+                <label for="language">Change Language</label>
+                <input type="checkbox" name="language" id="language" value="language">
+              </div>
+              <!-- Textarea -->
+              <div class="form-group">
+                <label for="textarea" class="textarea-label">Do you have any suggestions?</label>
+                <textarea name="textarea" id="textarea" class="textarea-comments" placeholder="Enter your comment here..."></textarea>
+              </div>
+              <!-- Submit-button -->
+              <div class="form-group">
+                <input type="submit" value="Submit" class="submit-button" id="submit">
+              </div>
             </form>
         </section>
     </main>
