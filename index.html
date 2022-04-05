@@ -14,17 +14,45 @@
     <main class="main-section">
         <section class="main-info">
             <h1 id="title">Lualfemo Survey Form</h1>
-            <p id="description">Thank you for taking the time to help me improve my skills</p>   
+            <p id="description">Thank you for taking the time to help me improve my skills</p>
         </section>
         <section class="form-section">
-            <form action="" id="survey-form">
+            <!-- Form name, email and age -->
+            <form action="" id="survey-form" method="post">
                 <label for="name" id="name-label">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
                 <label for="email" id="email-label">Email</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required placeholder="Enter your Email">
                 <label for="number" id="number-label">Age (Optional)</label>
-                <input type="number" name="number" id="number" required>
+                <input type="number" name="number" id="number" min="18" max="80" required placeholder="Age">
+                <!-- dropdown list -->
+                <label for="dropdown" id="label-role">Which option best describes your current role?</label>
+                <select name="dropdown" id="dropdown">
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="fullT">Full Time Job</option>
+                    <option value="partT">Part Time Job</option>
+                    <option value="notSay">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+                <!-- recommend radio buttons -->
+                <p class="radio-paragraph">Would you recommend my work to a friend?</p>
+                <input type="radio" name="recommend" id="definitely" value="definitely">
+                <label for="definitely">Definitely</label>
+                <input type="radio" name="recommend" id="maybe" value="maybe">
+                <label for="maybe">Maybe</label>
+                <input type="radio" name="recommend" id="notsure" value="notsure">
+                <label for="notsure">Not sure</label>
                 <input type="submit" value="submit">
+                <!-- feature options -->
+                <label for="page-feature" id="page-feature">What is your favorite feature about this page?</label>
+                <select name="page-feature" id="page-feature">
+                    <option disabled selected value>Select an option</option>
+                    <option value="design">Design</option>
+                    <option value="colors">Colors</option>
+                    <option value="elementsP">Elements Positioning</option>
+                    <option value="information">Information</option>
+                </select>
             </form>
         </section>
     </main>
