@@ -13,6 +13,8 @@ body {
     background: linear-gradient(rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://drive.google.com/uc?export=view&id=1EIRwdeLQQfljV8sSzIfXZSxKDPLqT6D-);
     background-attachment:fixed;
     background-size: 100% 100%;
+    color: white;
+    font-size: 2rem;
 }
 
 .main-section {
@@ -36,13 +38,11 @@ body {
 
 #title {
     font-size: 3rem;
-    color: white;
     text-align: center;
+    margin-top: 2rem;
 }
 
 #description {
-    font-size: 1.6rem;
-    color: white;
     margin-top: 0.7rem;
     text-align: center;
 }
@@ -51,12 +51,50 @@ body {
     display: flex;
     justify-content: center;
     background: linear-gradient(180deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.5) 35%, rgb(2, 27, 33) 100%);
-    width: 90%;
+    width: 70%;
     margin-top: 2.5rem;
     border: 2px solid lightpink;
 }
 
 .form-group {
+    display: flex;
+    flex-direction: column;
     margin: 5rem;
     border: 1px solid green;
+    width: auto;
 }
+
+
+
+#name-label {
+    margin-bottom: 1rem;
+}
+
+#email-label {
+    margin-bottom: 1rem;
+}
+
+#number-label {
+    margin-bottom: 1rem;
+}
+
+#label-role {
+    margin-bottom: 1rem;
+}
+
+.radio-paragraph {
+    margin-bottom: 1rem;
+}
+
+#label-pagefeature {
+    margin-bottom: 1rem;
+}
+
+.checkbox-paragraph {
+    margin-bottom: 1rem;
+}
+.textarea-label {
+    margin-bottom: 1rem;
+
+}
+
