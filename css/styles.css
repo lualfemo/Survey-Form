@@ -58,8 +58,7 @@ body {
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+    display: block;
     margin: 5rem;
     border: 1px solid green;
     width: auto;
@@ -68,19 +67,23 @@ body {
 
 
 #name-label {
+    display: block;
     margin-bottom: 1rem;
 }
 
 #email-label {
     margin-bottom: 1rem;
+    display: block;
 }
 
 #number-label {
     margin-bottom: 1rem;
+    display: block;
 }
 
 #label-role {
     margin-bottom: 1rem;
+    display: block;
 }
 
 .radio-paragraph {
@@ -102,10 +105,16 @@ body {
 .input-css {
     padding: 0.7rem;
     border-radius: 0.7rem;
+    width: 100%;
 }
 
-.form-css {
-    align-items: ;
+.form-css label {
+    display: block;
 }
+
+.input-radio {
+    display: inline-block;
+}
+
 
 
