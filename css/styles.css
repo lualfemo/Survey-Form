@@ -19,7 +19,7 @@ body {
 
 .main-section {
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     border: 2px solid blue;
     flex-direction: column;
@@ -51,14 +51,14 @@ body {
     display: flex;
     justify-content: center;
     background: linear-gradient(180deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.5) 35%, rgb(2, 27, 33) 100%);
-    width: 70%;
+    width: 60%;
     margin-top: 2.5rem;
     border: 2px solid lightpink;
+    border-radius: 0.7rem;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+    display: block;
     margin: 5rem;
     border: 1px solid green;
     width: auto;
@@ -67,19 +67,23 @@ body {
 
 
 #name-label {
+    display: block;
     margin-bottom: 1rem;
 }
 
 #email-label {
     margin-bottom: 1rem;
+    display: block;
 }
 
 #number-label {
     margin-bottom: 1rem;
+    display: block;
 }
 
 #label-role {
     margin-bottom: 1rem;
+    display: block;
 }
 
 .radio-paragraph {
@@ -97,4 +101,20 @@ body {
     margin-bottom: 1rem;
 
 }
+
+.input-css {
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+    width: 100%;
+}
+
+.form-css label {
+    display: block;
+}
+
+.input-radio {
+    display: inline-block;
+}
+
+
 
