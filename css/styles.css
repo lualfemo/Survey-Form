@@ -62,6 +62,7 @@ body {
     margin: 5rem;
     border: 1px solid green;
     width: auto;
+    height: auto;
 }
 
 
@@ -90,7 +91,7 @@ body {
     margin-bottom: 1rem;
 }
 
-#label-pagefeature {
+#feature-paragraph {
     margin-bottom: 1rem;
 }
 
@@ -110,6 +111,12 @@ body {
 
 .form-css label {
     display: block;
+}
+
+.form-css input {
+    margin-right: 0.5rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
 }
 
 .input-radio {
