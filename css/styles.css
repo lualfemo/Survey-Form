@@ -21,7 +21,7 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     flex-direction: column;
     align-items: center;
 }
@@ -30,7 +30,7 @@ body {
     display: flex;
     height: 8rem;
     width: 100%;
-    border: 2px solid rgb(21, 172, 147);
+    /* border: 2px solid rgb(21, 172, 147); */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -47,26 +47,32 @@ body {
     text-align: center;
 }
 
+.form-container {
+    height: auto;
+    /* border: 1px solid red; */
+}
+
 .form-section {
     display: flex;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.5) 35%, rgb(2, 27, 33) 100%);
-    width: 60%;
+    background: rgba(27, 27, 50,.8);
     margin-top: 2.5rem;
-    border: 2px solid lightpink;
+    /* border: 1px solid lightpink; */
     border-radius: 0.7rem;
 }
 
 .form-group {
+    display: flex;
     display: block;
-    margin: 5rem;
-    border: 1px solid green;
-    width: auto;
+    margin: 4rem 0 4rem 0;
+    /* border: 1px solid rgb(200, 252, 13); */
     height: auto;
 }
 
-
-
+#survey-form {
+    width: 80%;
+    /* border: 1px solid rgb(255, 8, 193); */
+}
 #name-label {
     display: block;
     margin-bottom: 1rem;
@@ -85,6 +91,10 @@ body {
 #label-role {
     margin-bottom: 1rem;
     display: block;
+}
+
+option::placeholder {
+    font-size: 1.5rem;
 }
 
 .radio-paragraph {
@@ -109,19 +119,81 @@ body {
     width: 100%;
 }
 
+.input-css::placeholder {
+    font-size: 1.5rem;
+}
+
 .form-css label {
-    display: block;
+    display: flex;
+    margin-bottom: 1.25rem;
 }
 
 .form-css input {
     margin-right: 0.5rem;
-    min-height: 1.5rem;
-    min-width: 1.5rem;
+    min-height: 2.5rem;
+    min-width: 2rem;
+}
+
+#dropdown {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.692);
+
+}
+
+#page-feature {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.692);
 }
 
 .input-radio {
     display: inline-block;
 }
 
+.textarea-label {
+    display: block;
+}
 
+.textarea-comments {
+    width: 100%;
+    min-height: 10rem;
+    resize: vertical;
+}
 
+.textarea-comments::placeholder{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.submit-button {
+    width: 100%;
+    height: 5rem;
+    background-color: #37af65;
+    color: white;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+.submit-button:hover {
+    background-color: #1e723e;
+}
+
+@media screen and (min-width:768px) {
+    .form-container {
+        width: 73rem;
+        min-width: 70rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-section {
+        width: 100%;
+    }
+
+    .form-group {
+        margin: 4rem 0 4rem 0;
+    }
+
+    #survey-form {
+        width: 95%;
+    }
+}
